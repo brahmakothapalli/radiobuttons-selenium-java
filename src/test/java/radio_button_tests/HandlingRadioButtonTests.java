@@ -21,13 +21,12 @@ public class HandlingRadioButtonTests {
     @BeforeMethod
     public void initializeBrowser() throws MalformedURLException {
 
-        /** initialize the test browser **/
         ChromeOptions browserOptions = new ChromeOptions();
         browserOptions.setPlatformName("Windows 10");
         browserOptions.setBrowserVersion("110.0");
         HashMap<String, Object> ltOptions = new HashMap<String, Object>();
-        ltOptions.put("username", GlobalConfigVariable.USER_NAME);
-        ltOptions.put("accessKey", GlobalConfigVariable.ACCESS_KEY);
+        ltOptions.put("username", GlobalConfigVariable.LT_USER_NAME);
+        ltOptions.put("accessKey", GlobalConfigVariable.LT_ACCESS_KEY);
         ltOptions.put("project", "Handling Radio Buttons in Selenium");
         ltOptions.put("w3c", true);
         ltOptions.put("plugin", "java-testNG");
